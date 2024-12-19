@@ -3,8 +3,6 @@
 #include <cassert>
 #include <vector>
 
-#include "../external/mm_file/include/mm_file/mm_file.hpp"
-
 #include "s_sequence.hpp"
 
 namespace sliced {
