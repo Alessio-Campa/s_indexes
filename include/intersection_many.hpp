@@ -16,7 +16,7 @@ size_t intersection(std::vector<s_sequence>& sequences, uint32_t* out) {
         iterators[i] = sequences[i].begin();
     }
 
-    static std::vector<uint16_t> headers(65536);
+    std::vector<uint16_t> headers(65536);
     uint64_t num_headers = 0;
     {
         uint32_t candidate = iterators[0].id();
@@ -41,7 +41,7 @@ size_t intersection(std::vector<s_sequence>& sequences, uint32_t* out) {
     }
 
     {
-        static std::vector<uint64_t> bitmap(1024);
+        std::vector<uint64_t> bitmap(1024);
         for (size_t i = 0; i != sequences.size(); ++i) {
             iterators[i] = sequences[i].begin();
         }
