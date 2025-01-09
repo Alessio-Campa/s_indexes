@@ -4,8 +4,6 @@
 #include <cassert>
 #include <vector>
 
-#include "../external/mm_file/include/mm_file/mm_file.hpp"
-
 #include "s_index.hpp"
 #include "util.hpp"
 #include "building_util.hpp"

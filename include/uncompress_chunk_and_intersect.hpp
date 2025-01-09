@@ -34,7 +34,7 @@ namespace sliced {
 
 uint32_t uncompress_sparse_chunk_and_intersect(uint8_t const* begin, int blocks,
                                                uint64_t* out) {
-    static std::vector<uint64_t> tmp(constants::chunk_size_in_64bit_words);
+    std::vector<uint64_t> tmp(constants::chunk_size_in_64bit_words);
     std::fill(tmp.begin(), tmp.end(), 0);
     uncompress_sparse_chunk(begin, blocks, tmp.data());
     uint32_t c = 0;
